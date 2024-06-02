@@ -1,0 +1,30 @@
+{
+  "name": "escrow",
+  "version": "1.0.0",
+  "description": "esrow",
+  "main": "src/index.js",
+  "type": "commonjs",
+  "directories": {
+    "src": "./src/**/"
+  },
+  "scripts": {
+    "test": "npx mocha ./test/escrow.t.js --exclude=./node_modules/**/* --no-timeouts --recursive --exit"
+  },
+  "author": "@debianchef",
+  "license": "ISC",
+  "devDependencies": {
+    "chai": "^4.4.1",
+    "dotenv": "^8.6.0",
+    "eslint": "^6.8.0",
+    "eslint-config-standard": "^14.1.1",
+    "eslint-plugin-import": "^2.20.2",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-standard": "^4.0.1",
+    "mocha": "^7.2.0"
+  },
+  "dependencies": {
+    "alchemy-sdk": "^3.3.1",
+    "ethers": "^6.12.2"
+  }
+}
